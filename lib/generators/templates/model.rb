@@ -1,5 +1,5 @@
 class Follow < ActiveRecord::Base
-	extend ActsAsFollows::FollowsLib
+	extend FollowIt::FollowLib
 
 	# NOTE: Follows belong to the "followable" interface, and also to followers
 	belongs_to :followed, :polymorphic => true
